@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/crear-tabla-autores.xml
+  - include:
+      file: db/changelog/crear-tabla-editoriales.xml
+  - include:
+      file: db/changelog/crear-tabla-libros.xml
+  - include:
+      file: db/changelog/crear-llaves-foraneas-e-indice.xml

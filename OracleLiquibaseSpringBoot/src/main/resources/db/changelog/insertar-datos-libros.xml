@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="07" author="Carlos">
+        <comment>Insertando libros</comment>
+        <insert tableName="libros">
+            <column name="id" valueNumeric="1"/>
+            <column name="titulo" value="Tierra de Infancia"/>
+            <column name="descripcion" value="es un libro de memorias poéticas que fue escrito en plena madurez literaria"/>
+            <column name="isbn" value="99929190"/>
+            <column name="idautor" valueNumeric="1"/>
+            <column name="ideditorial" valueNumeric="1"/>
+      
+        </insert>
+      
+        <insert tableName="libros">
+            <column name="id" valueNumeric="2"/>
+            <column name="titulo" value="Cien años de soledad"/>
+            <column name="descripcion" value="trata un siglo en la vida de la familia Buendía"/>
+            <column name="isbn" value="8482806866"/>
+            <column name="idautor" valueNumeric="2"/>
+            <column name="ideditorial" valueNumeric="2"/>
+            
+     
+        </insert>
+        
+        <insert tableName="libros">
+            <column name="id" valueNumeric="3"/>
+            <column name="titulo" value="Don Quijote de la Mancha"/>
+            <column name="descripcion" value="es una novela escrita por el español Miguel de Cervantes Saavedra"/>
+            <column name="isbn" value="8415171803"/>
+            <column name="idautor" valueNumeric="3"/>
+            <column name="ideditorial" valueNumeric="3"/>
+     
+        </insert>
+    </changeSet>
+</databaseChangeLog>

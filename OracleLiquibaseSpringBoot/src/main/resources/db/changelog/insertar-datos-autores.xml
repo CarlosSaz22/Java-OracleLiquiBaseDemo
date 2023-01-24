@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="05" author="Carlos">
+        <comment>Insertando autores</comment>
+        <insert tableName="autores">
+            <column name="id" valueNumeric="1"/>
+            <column name="nombre" value="Claudia Lars"/>
+            <column name="nacionalidad" value="Salvadoreña"/>
+        </insert>
+      
+        <insert tableName="autores">
+            <column name="id" valueNumeric="2"/>
+            <column name="nombre" value="Gabriel Garcia Marquez"/>
+            <column name="nacionalidad" value="Colombiano"/>
+        </insert>
+        
+        <insert tableName="autores">
+            <column name="id" valueNumeric="3"/>
+            <column name="nombre" value="Miguel de Cervantes"/>
+            <column name="nacionalidad" value="Español"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
